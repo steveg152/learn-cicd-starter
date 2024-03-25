@@ -20,7 +20,7 @@ jobs:
       - name: Go Fmt
         run: test -z $(go fmt ./...)
       - name: Go Lint
-        run: test -z $(staticcheck ./...)
+        run: staticcheck ./...
 
   tests:
     name: Tests
